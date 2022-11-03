@@ -1,0 +1,50 @@
+/* logo-color-blue: #2196F3
+logo-color-black: #000000
+header background: #FFFFFF;
+    navi black: #212121
+    navi hoover: #2196F3
+    phone: #757575;
+    email #2196F3
+main background: #F5F5F5;
+footer background: #2F303A;
+    address #FFFFFF 60 % */
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #212121;
+}
+
+.header {
+    background-color: #FFFFFF;
+    font-size: 14px;
+}
+
+h1 {
+    font-family: oleo script;
+    font-size: 26px;
+    color: #2196F3;
+}
+.logoheader {
+    color: #000000;
+}
+.logofooter {
+    color: #757575;
+}
+.phone {
+    color: #757575;
+}
+.email {
+    color: #757575;
+}
+.
+
+.main {
+    background-color: #F5F5F5;
+}
+
+.footer {
+    background: #2F303A;
+    color: rgba(255, 255, 255, 1);
+}
+.footer .link {
+    color: #ffffff;
+}
