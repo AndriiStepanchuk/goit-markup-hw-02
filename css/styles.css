@@ -14,29 +14,63 @@ footer background: #2F303A;
     --accent-color: #2196F3;
     --secondary-text-color: #757575;   
 }
-
-body {
-    font-family: Roboto, sans-serif;
-    color: var(--primary-text-color);
-    background-color: #F5F5F5;
+/* Reset start */
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
 }
-
 .list {
     list-style: none;
-    text-decoration: none;
+    padding: 0;
+    margin: 0;
 }
 
 .link {
     text-decoration: none;
+    color: currentColor;
+}
+
+img {
+    display: block;
+}
+
+/* Reset end */
+
+body {
+    font-family: Roboto, sans-serif;
+    color: var(--primary-text-color);
+    background-color: #FFFFFF;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.section {
+    padding-top: 47px;
+    padding-bottom: 47px;
+}
+
+.advantages-section {
+    padding-top: 94px;
+}
+
+.team-section {
+    padding-bottom: 94px;
+    background-color: #F5F4FA;
 }
 
 .button {
     font-family: inherit;
     text-decoration: none;
     cursor: pointer;
+    border-radius: 4px;
 }
 
-/* ---------------------------------LOGO */
+/* --LOGO-- */
 .logoweb {
     color: var(--accent-color);
     font-family: 'Raleway';
@@ -75,23 +109,34 @@ body {
 .phone {
     color: var(--secondary-text-color);
 }
-
-.header-title {
+/* ------------------------HERO------------------ */
+.hero-section {
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-color: #2F303A;
+    text-align: center;
+}
+
+.hero-title {
+    margin-left: auto;
+    margin-right: auto;
+    width: 696px;
+    margin-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #ffffff;
 }
-.header-btn {
+.hero-btn {
+    padding: 10px 32px;
+    border: 0px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     background: var(--accent-color);
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    text-align: center;
     letter-spacing: 0.06em;
     color: #ffffff;
 }
@@ -99,6 +144,7 @@ body {
 /* ------------------------------MAIN */
 /* ----------------INDEX--------------- */
 .about-title {
+    margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
     line-height: calc(16 / 14);
@@ -113,7 +159,8 @@ body {
     color: var(--secondary-text-color)
 }
 
-.main-title {
+.secondary-title {
+    margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: calc(42 / 36);
@@ -121,7 +168,21 @@ body {
     letter-spacing: 0.03em;
 }
 
+.team-card {
+    background-color: #ffffff;
+    padding-bottom: 30px;
+    width: 270px;
+    text-align: center;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team-img {
+    margin-bottom: 30px;
+}
+
 .team-name {
+    margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: calc(19 / 16); 
@@ -140,7 +201,15 @@ body {
 
 /* ---------------------PORTFOLIO---------------- */
 
+.filter-section {
+    padding-top: 94px;
+    margin-bottom: 50px;
+}
+
 .filter-item-button {
+    min-width: 73px;
+    padding: 6px 22px;
+    border: 1px solid transparent;
     background: #F5F4FA;
     font-weight: 500;
     font-size: 16px;
@@ -156,7 +225,30 @@ body {
     color: #ffffff;
 }
 
+/* --Projects-- */
+
+.projects-section {
+    padding-bottom: 94px;
+}
+
+.project-item {
+    width: 370px;
+    text-align: center;
+    background: #ffffff;
+    border: 1px solid #EEEEEE;
+    padding-bottom: 20px;
+}
+
+.project-img {
+    margin-bottom: 20px;
+}
+
+.project-img-link {
+    display: inline-block;
+}
+
 .project-item-title {
+    margin-bottom: 4px;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -174,6 +266,8 @@ body {
 
 /* ----------------------------FOOTER---------------------- */
 .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: #2F303A;
     color: rgba(255, 255, 255, 1);
 }
@@ -190,3 +284,14 @@ body {
 .footer-contacts-grey {
     color: rgba(255, 255, 255, 0.6)
 }
+
+.footer-contacts:hover, 
+.footer-contacts:focus {
+    color: var(--accent-color);
+}
+
+.footer-contacts-grey:hover, 
+.footer-contacts-grey:focus {
+    color: var(--accent-color);
+}
+/* -------------------------- */
