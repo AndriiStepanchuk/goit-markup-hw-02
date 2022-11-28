@@ -16,22 +16,24 @@
 </head>
 <body>
     <header class="header container">
-        <nav>
+        <nav class="navigation">
             <a href="./index.html" class="logoweb link">Web<span class="logoheader">Studio</span></a>
-            <ul class="nav list">
+            <ul class="nav-list list">
                 <li class="nav-item"><a href="./index.html" class="nav-item-href link">Студія</a></li>
                 <li class="nav-item"><a href="./portfolio.html" class="nav-item-href link">Портфоліо</a></li>
                 <li class="nav-item"><a href="" class="nav-item-href link">Контакти</a></li>
             </ul>
         </nav>
-        <a href="mailto:info@devstudio.com" class="email link">info@devstudio.com</a>
-        <a href="tel:+380961111111" class="phone link">+38 096 111 11 11</a>
-    </header>
+        <div class="header-contacts">
+            <a href="mailto:info@devstudio.com" class="email link item">info@devstudio.com</a>
+            <a href="tel:+380961111111" class="phone link item">+38 096 111 11 11</a>
+        </div>
+</header>
     <main class="main">
         <section class="filter-section">
             <div class="container">
                 <h1></h1>
-                <ul class="filter list">
+                <ul class="flex-container filter list">
                     <li class="filter-item list"><button class="filter-item-button button" type="button">Усі</button></li>
                     <li class="filter-item list"><button class="filter-item-button button" type="button">Веб-сайти</button></li>
                     <li class="filter-item list"><button class="filter-item-button button" type="button">Додатки</button></li>
@@ -41,7 +43,7 @@
             </div>
         </section>
         <section class="projects-section">
-            <ul class="projects list container">
+            <ul class="flex-container projects list container">
                 <li class="project-item">
                     <a href="" class="project-img-link link"><img class="project-img" src="./images/portfolio/web-technokryak.jpg" alt="Технокряк" width="370" height="294">
                     <h2 class="project-item-title" >Технокряк</h2>

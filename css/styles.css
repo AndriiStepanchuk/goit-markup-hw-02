@@ -33,6 +33,10 @@ img {
     display: block;
 }
 
+.flex-container {
+    display: flex;
+}
+
 /* Reset end */
 
 body {
@@ -90,18 +94,54 @@ body {
 
 /* ------------------------HEADER */
 .header {
+    border-bottom: 1px solid #ECECEC;
+    display: flex;
+
+    align-items: center;
     background-color: #ffffff;
     font-size: 14px;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em
 }
-.nav-item-href {
-    color: var(--primary-text-color);
+
+.navigation {
+    display: flex;
+    align-items: center;
 }
+
+.nav-list {
+    display: flex;
+    margin-left: 93px;
+}
+
+.nav-list .nav-item + .nav-item {
+    margin-left: 50px;
+}
+
+.nav-item-href {
+    display: block;
+    color: var(--primary-text-color);
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
 .nav-item-href:hover, 
 .nav-item-href:focus {
     color: var(--accent-color);
+}
+
+.header-contacts {
+    display: flex;
+    margin-left: auto;
+}
+
+/* .header-contacts .item {
+    display: block;
+} */
+
+.header-contacts .item + .item {
+    margin-left: 50px;    
 }
 .email {
     color: var(--accent-color);
@@ -143,6 +183,8 @@ body {
 
 /* ------------------------------MAIN */
 /* ----------------INDEX--------------- */
+/* --Advantages-section-- */
+
 .about-title {
     margin-bottom: 10px;
     font-weight: 700;
@@ -168,6 +210,13 @@ body {
     letter-spacing: 0.03em;
 }
 
+.whatwedo-img .item + .item {
+    margin-left: 30px;
+}
+
+.team-list .team-card + .team-card {
+    margin-left: 30px;
+}
 .team-card {
     background-color: #ffffff;
     padding-bottom: 30px;
@@ -200,6 +249,13 @@ body {
 }
 
 /* ---------------------PORTFOLIO---------------- */
+.filter .filter-item + .filter-item {
+    margin-left: 8px;
+}
+
+.filter {
+    justify-content: center;
+}
 
 .filter-section {
     padding-top: 94px;
@@ -226,6 +282,23 @@ body {
 }
 
 /* --Projects-- */
+
+.projects {
+    flex-wrap: wrap;
+}
+
+.projects .project-item {
+    margin-right: 30px;
+    margin-bottom: 30px;  
+}
+
+.projects .project-item:nth-child(3n) {
+    margin-right: 0;
+}
+    
+.projects .project-item:nth-last-child(-n+3) {
+    margin-bottom: 0;
+}
 
 .projects-section {
     padding-bottom: 94px;
