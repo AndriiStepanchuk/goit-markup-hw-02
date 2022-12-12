@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>WebStudio</title>
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,7 +30,7 @@
             </div>
     </header>
     <main class="main"> 
-        <section class="hero-section section">
+        <section class="overlay hero-section section">
             <div class="container">
                 <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
                 <button type="button" class="hero-btn button">Замовити послугу</button>
@@ -38,20 +38,40 @@
         </section>
         <section class="advantages-section section">
             <div class="container">
-                <ul class="flex-container list">
-                    <li>
+                <ul class="advantages-list card-set list">
+                    <li class="card-set-item">
+                        <div class="advantages-list-overlay">
+                            <svg>
+                                <use href="./images/index/symbol-defs.svg#icon-antenna"></use>
+                            </svg>
+                        </div>
                         <h3 class="about-title">УВАГА ДО ДЕТАЛЕЙ</h3>
                         <p class="about-description">Ідейні міркування, i навіть початок повсякденної роботи з формування позиції.</p>
                     </li>
-                    <li>
+                    <li class="card-set-item">
+                        <div class="advantages-list-overlay">
+                            <svg width="65" height="65" fill="black">
+                                <use href="./images/index/symbol-defs.svg#icon-clock"></use>
+                            </svg>
+                        </div>              
                         <h3 class="about-title">ПУНКТУАЛЬНІСТЬ</h3>
                         <p class="about-description">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
                     </li>
-                    <li>
+                    <li class="card-set-item">
+                        <div class="advantages-list-overlay">
+                            <svg>
+                                <use href="./images/index/symbol-defs.svg#icon-diagram"></use>
+                            </svg>
+                        </div>
                         <h3 class="about-title">ПЛАНУВАННЯ</h3>
                         <p class="about-description">Так само консультація з широким активом значною мірою зумовлює.</p>
                     </li>
-                    <li>
+                    <li class="card-set-item">
+                        <div class="advantages-list-overlay">
+                            <svg>
+                                <use href="./images/index/symbol-defs.svg#icon-astronaut"></use>
+                            </svg>
+                         </div>
                         <h3 class="about-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
                         <p class="about-description">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
                     </li>
@@ -61,40 +81,189 @@
         <section class="portfolio-section section">
             <div class="whatwedo-img container">
                 <h2 class="secondary-title">Чим ми займаємося</h2>
-                <ul class="flex-container list">
-                    <li class="item"><img src="./images/index/compressjpeg/about_us_1-min.jpg" alt="img1" width="370" height="294"></li>
-                    <li class="item"><img src="./images/index/compressjpeg/about_us_2-min.jpg" alt="img1" width="370" height="294"></li>
-                    <li class="item"><img src="./images/index/compressjpeg/about_us_3-min.jpg" alt="img1" width="370" height="294"></li>
+                <ul class="card-set list">
+                    <li class="card-set-item"><img src="./images/index/about_us_1-min.jpg" alt="img1" width="370" height="294"></li>
+                    <li class="card-set-item"><img src="./images/index/about_us_2-min.jpg" alt="img1" width="370" height="294"></li>
+                    <li class="card-set-item"><img src="./images/index/about_us_3-min.jpg" alt="img1" width="370" height="294"></li>
                 </ul>   
             </div>
         </section>
         <section class="team-section section">
             <div class="container">
                 <h2 class="secondary-title">Наша команда</h2>
-            <ul class="team-list flex-container list">
-                <li class="team-card">
-                    <img class="team-img"src="./images/index/compressjpeg/team_1-min.jpg" alt="hero_1" width="270" height="260">
-                    <p class="team-name">Ігор Дем'яненко</p>
-                    <p class="team-possition">Product Designer</p>
-                </li>
-                <li class="team-card">
-                    <img class="team-img"src="./images/index/compressjpeg/team_2-min.jpg" alt="hero_2" width="270" height="260">
-                    <p class="team-name">Ольга Рєпіна</p>
-                    <p class="team-possition">Frontend Developer</p>
-                </li>
-                <li class="team-card">
-                    <img class="team-img"src="./images/index/compressjpeg/team_3-min.jpg" alt="hero_3" width="270" height="260">
-                    <p class="team-name">Микола Тарасов</p>
-                    <p class="team-possition">Marketing</p>
-                </li>
-                <li class="team-card">
-                    <img class="team-img"src="./images/index/compressjpeg/team_4-min.jpg" alt="hero_4" width="270" height="260">
-                    <p class="team-name">Михайло Єрмаков</p>
-                    <p class="team-possition">UI Designer</p>
-                </li>
-            </ul>
+                <ul class="team-list card-set list">
+                    <li class="team-card card-set-item">
+                        <img class="team-img"src="./images/index/team_1-min.jpg" alt="hero_1" width="270" height="260">
+                        <div class="team-wrapper">
+                            <p class="team-name">Ігор Дем'яненко</p>
+                            <p class="team-possition">Product Designer</p>
+                            <ul class="socials list">
+                                <li class="socials-item">
+                                    <a class="socials-link link" href="https://instagram.com" target="_blank" rel="noopener no referrer" aria-label="instagram icon">
+                                        <svg class="socials-icon" width="20" height="20">
+                                            <use href="/images/icons.svg#icon-instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="socials-item">
+                                    <a class="socials-link link" href="https://instagram.com" target="_blank" rel="noopener no referrer" aria-label="instagram icon">
+                                        <svg class="socials-icon" width="20" height="20">
+                                            <use href="/images/icons.svg#icon-twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="socials-item">
+                                    <a class="socials-link link" href="https://instagram.com" target="_blank" rel="noopener no referrer" aria-label="instagram icon">
+                                        <svg class="socials-icon" width="20" height="20">
+                                            <use href="/images/icons.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="socials-item">
+                                    <a class="socials-link link" href="https://instagram.com" target="_blank" rel="noopener no referrer" aria-label="instagram icon">
+                                        <svg class="socials-icon" width="20" height="20">
+                                            <use href="/images/icons.svg#icon-linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="team-card card-set-item">
+                        <img class="team-img"src="./images/index/team_2-min.jpg" alt="hero_2" width="270" height="260">
+                        <div class="team-wrapper">
+                            <p class="team-name">Ольга Рєпіна</p>
+                            <p class="team-possition">Frontend Developer</p>
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <svg>
+                                            <use></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <svg>
+                                            <use></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <svg>
+                                            <use></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <svg>
+                                            <use></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="team-card card-set-item">
+                        <img class="team-img"src="./images/index/team_3-min.jpg" alt="hero_3" width="270" height="260">
+                        <div class="team-wrapper">
+                            <p class="team-name">Микола Тарасов</p>
+                            <p class="team-possition">Marketing</p>
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <svg>
+                                            <use></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <svg>
+                                            <use></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <svg>
+                                            <use></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <svg>
+                                            <use></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="team-card card-set-item">
+                        <img class="team-img"src="./images/index/team_4-min.jpg" alt="hero_4" width="270" height="260">
+                        <div class="team-wrapper">
+                            <p class="team-name">Михайло Єрмаков</p>
+                            <p class="team-possition">UI Designer</p>
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <svg>
+                                            <use></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <svg>
+                                            <use></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <svg>
+                                            <use></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <svg>
+                                            <use></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </section>
+        <section class="client-section section">
+            <div class="container">
+                <h2 class="secondary-title">Постійні клієнти</h2>
+                <ul class="clients-list card-set list">
+                    <li class="card-set-item">
+                        <a class="client-link link" href="" target="_blank" rel="noopener noreferrer" aria-label="client icon">
+                            <svg class="client-icon" width="106px" height="60px">
+                                <use href="./images/icons.svg#icon-Client-logo-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="card-set-item">
+                        <a class="client-link" href="">
+                                <!-- <svg>
+                                <use href="/images/antenna.svg"></use>
+                            </svg> -->
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section> 
     </main>
     <footer class="footer">
         <div class="container">
