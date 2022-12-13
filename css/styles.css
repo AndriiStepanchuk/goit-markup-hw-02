@@ -220,7 +220,7 @@ body {
     min-width: 1600px;
     margin-left: auto;
     margin-right: auto;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/index/bgimg.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/main/bgimg.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
