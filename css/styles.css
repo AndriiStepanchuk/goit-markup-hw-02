@@ -173,6 +173,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: var(--secondary-text-color);
 }
 .header-icons {
@@ -232,6 +235,10 @@ body {
 }
 
 .advantages-list-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
     height: 120px;
     margin-bottom: 30px;
     background-color: #F5F4FA;
