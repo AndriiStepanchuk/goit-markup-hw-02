@@ -163,13 +163,21 @@ body {
     color: var(--secondary-text-color);
 }
 
-.header-contacts:hover,
-.geader-contacts:focus {
+.header-contacts .item:hover,
+.geader-contacts .item:focus {
     color: var(--accent-color);
+    /* fill: var(--accent-color); */
 }
 
+.header-contacts .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--secondary-text-color);
+}
 .header-icons {
     margin-right: 10px;
+    fill: currentColor;
 }
 
 
